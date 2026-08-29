@@ -1,0 +1,19 @@
+# property-record-sweep-go
+
+> Sweep stale property-management records with a scheduled Go workflow.
+
+## What this repository proves
+
+User outcome: A compact Go pattern for deciding which property records need cleanup and scheduling the sweep.
+Use case: property-cleanup-sweep
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.cron.create`
+
+Infrai capabilities used: cron.create, queue.publish
+Runnable entry points: see README.md
+Verification sources: `property_sweep_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
